@@ -27,12 +27,12 @@ header h1{
 	text-transform:uppercase;
 	border: solid 3px white;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   header nav ul{
     display: none;
   }
   header h1,p{
-  	font-size: 0.8rem;
+  	font-size: 0.9rem;
   }
 }
 /*texto */
@@ -49,9 +49,6 @@ width: 120px;
 height: 75px;
 }
 	@media screen and (max-width: 996px) {
-  header nav ul{
-    display: none;
-  }
   header .logo img{
   	    width: 100px;
     height: 52px;
@@ -78,11 +75,10 @@ header .logo,.links{
 }
 /*header links*/
 
-/*header texto*/
-
-
-
-/*header texto*/
+.container2{
+	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5,#90E3E1);
+	    height: 22px;
+}
 
 /*header social*/
 header nav,.social{
@@ -104,66 +100,41 @@ header .social li a{
 	border-bottom-left-radius: 120px;
 	border-bottom-right-radius: 120px;
 }/*socia header*/
-
-.container2{
-	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5,#90E3E1);
-	    height: 22px;
+section p{
+text-align: center
+}
+section ul{
+	display: grid;
+    grid-template-columns: 200px 200px;
+    text-align: center;
+    grid-column-gap: 100px;
+    justify-content: center;
+}
+section ul li {
+	  list-style-type: none;
+	  margin: 40px 0 10px;
 }
 
+@media screen and (max-width: 650px) {
 
-/*section itens*/
-section .itens{
-display: flex;
-justify-content: space-around;
-text-align: center;
+		section ul{
+			display: block !important;
+		}
+	}
 
+@media screen and (max-width: 996px) {
+	section ul{
+		grid-column-gap: 2px;
+	}
+	section ul li .barra{
+		width: 80%;
+	}
+  section ul li h2{
+  	    font-size: 1em;
+    flex-flow: inherit;
+  }
 }
-section .coracao,.lapis,.compartilhar,.codigo{
-	width: 90px;
-	height:90px;
-	background-color: #BDBEBF;
-	border-top-left-radius: 120px;
-	border-top-right-radius: 120px;
-	border-bottom-left-radius: 120px;
-	border-bottom-right-radius: 120px;
-	text-align: center;
-	line-height: 85px;
-	color: white;
-	font-size: 28px;
-	margin: 50px 0;
-}
-section .coracao{
-	order: 4;
-}
-section .lapis{
-	order: 1;
-}
-section .codigo{
-	order: 2;
-}
-section .compartilhar{
-	order: 5;
-}
-section .imagem img{
-	width: 120px;
-    height: 120px;
-	border-top-left-radius: 120px;
-	border-top-right-radius: 120px;
-	border-bottom-left-radius: 120px;
-	border-bottom-right-radius: 120px;
-	margin: 50px 0;
 
-} 
-section .imagem{
-	order: 3;
-}
-/*section itens*/
-
-/*section sobre*/
-/*section sobre */
-
-
-/*section texto*/
 section .botao{
 	display: table;
 	margin: 20px auto;
@@ -176,61 +147,71 @@ section .botao{
 }
 	section .botao:hover{border-color:#9ad15e;color:#9ad15e}
 	section .botao:focus{border-color:#31b1e7;color:#31b1e7}
-
-	section .textos{
-		position:relative;
-		min-height:1px;
-		padding-left:15px;
-		padding-right:15px;
-		text-align:center;
-	    font-family: arial;
-    	text-align: center;
+	
+	section .barra{
+	background-color: gray;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	border-bottom-left-radius: 120px;
+	border-bottom-right-radius: 120px;
+	width: 100%;
+	height: 17px;
+	margin: 10px auto;
+}
+	section .barra span{
+		height: 17px;
+		display: block;
+			border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	border-bottom-left-radius: 120px;
+	border-bottom-right-radius: 120px;
+	background-image: linear-gradient(to right ,orange,#EB5D0C);
 	}
-	section p{
-		color: black;
+	section .habilidade-4 span{
+		width: 80%;
 	}
-/*section texto*/
-@media screen and (max-width: 790px) {
-section .itens{
-	display: block;
-}
-section .itens .imagem{
-	margin:  0 0 -20px 0;
-}
-section .coracao,.lapis,.compartilhar,.codigo{
-	display: inline-block;
-	width: 80px;
-	height:80px;
-	text-align: center;
-	line-height: 80px;
-	margin: auto;
-}
-}
-@media screen and (max-width: 550px) {
-section .coracao,.lapis,.compartilhar,.codigo,.imagem img{
-	width: 45px;
-	height:45px;
-	line-height: 45px;
-}
-}
+		section .habilidade-3 span{
+		  width: 30%;
+	}
+		section .habilidade-2 span{
+		  width: 40%;
+	}
+	 
+	 	section .habilidade-1 span{
+		 width: 10%;
+	}
 
-/* section .itens{
-    flex-wrap: wrap;
-}*/
-/*footer*/
+	 section .habilidade-4 h2 i{
+		color: orange;
+	}
+	section .habilidade-1 h2 i{
+		color: orange;
+	}
+	section .habilidade-3 h2 i{
+		color: blue;
+	}
+	section .habilidade-2 h2 i{
+		color: grey;
+	}
 
 footer{
 	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5);
 	padding: 12px;
 }
+
 footer .logo-rodape img{
 	width: 350px;
 	height: 100px;
 	margin: 35px auto;
 	display: block;
-	min-width: 300px;
 }
 footer p{
 	text-align: center;
 }
-/*footer*/
+@media screen and (max-width: 500px) {
+	footer .logo-rodape img{
+		width: 250px;
+		height:80px
+	}
+}
+/*foote
