@@ -1,0 +1,189 @@
+body{
+	margin: 0;
+}
+header{
+	background-image: url(../imagens/fundo-slide-pagina-inicial.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 425px;
+	position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/*texto*/
+header p{
+	color: white;
+	text-align: center;
+	text-transform:uppercase;
+}
+header h1{
+	 margin: 150px auto 0;
+	font-weight:100;
+	color: white;
+	text-align: center;
+	text-transform:uppercase;
+	border: solid 3px white;
+	padding: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  header nav ul{
+    display: none;
+  }
+  header h1,p{
+  	font-size: 0.8rem;
+  }
+}
+/*texto */
+/*header logo*/
+header .logo{
+float: left;
+width: 70px;
+height: 35px;
+}
+header .logo img{
+float: left;
+width: 120px;
+height: 75px;
+}
+
+  header .logo img{
+  	    width: 100px;
+    height: 52px;
+  }header .logo {
+  	    width: 100px;
+    height: 52px;
+  }
+
+/*links**/
+header .links{
+	float: right;
+}
+header .links nav ul li{
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+header .links nav ul li a {
+	text-transform: uppercase;
+	color: white;
+		text-decoration: none;
+}
+header .logo,.links{
+	margin: 20px 0 0 ;
+}
+/*header links*/
+
+/*header texto*/
+
+
+
+/*header texto*/
+
+/*header social*/
+header nav,.social{
+	display: inline-block;
+}
+header .social li{
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+header .social li a{
+	color: white;
+	display: block;
+	border: 1px solid white;
+	padding: 4px;
+	line-height: 12px;
+	text-align: center;
+	border-top-left-radius: 120px;
+	border-top-right-radius: 120px;
+	border-bottom-left-radius: 120px;
+	border-bottom-right-radius: 120px;
+}/*socia header*/
+
+.container2{
+	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5,#90E3E1);
+	    height: 22px;
+}
+.portfolio figure{
+	position: relative;
+		overflow: hidden;
+}
+.portfolio figcaption a {
+	text-align: -webkit-auto;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	z-index: 2;
+	color: white;
+	top: 40%;
+	height: 10px;
+}
+.portfolio figcaption a h3{
+	margin: 0;
+	font-size: 17px;
+	opacity: 0;
+}
+.portfolio figcaption a p{
+	font-size: 13px;
+	opacity: 0;
+}
+.portfolio figcaption a,.gradient{
+	transition: 0.3s;
+}
+.portfolio ul li img{
+	width: 200px;
+	height:120px;
+
+}
+.portfolio ul{
+	display: grid;
+	padding-left: 0px;
+	padding-right: 0px;
+	 grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	 grid-auto-rows: 200px;
+	 grid-gap: 20px;
+	}
+.portfolio ul li{
+	justify-content: center;
+	height: 200px;
+}
+
+.portfolio ul{
+	list-style-type:  none;
+}
+section .gradient{
+	background-image: linear-gradient(60deg,#52FF92,#46F6FF);
+	position: absolute;
+	top: 100%;
+	opacity: 0.8;
+	z-index:1;
+	display: block;
+	width: 200px;
+	height:120px;
+}
+section figure:hover .gradient{
+top:0;
+}
+section figure:hover figcaption p{
+opacity: 1;
+}
+section figure:hover figcaption h3{
+opacity: 2;
+}
+footer{
+	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5);
+	padding: 12px;
+}
+footer .logo-rodape img{
+	width: 250px;
+	height: 100px;
+	margin: 105px auto;
+	display: block;
+}
+footer p{
+	text-align: center;
+}
+/*footer*/
