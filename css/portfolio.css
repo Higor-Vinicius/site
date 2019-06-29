@@ -30,8 +30,12 @@ header h1{
 }
 
 @media screen and (max-width: 500px) {
-  header nav ul{
-    display: none;
+  header nav,.links ul{
+    font-size: 10px;
+    padding-left: 0;
+  }
+  header .social a{
+  	font-size: 10px;
   }
   header h1,p{
   	font-size: 0.8rem;
@@ -49,21 +53,28 @@ float: left;
 width: 120px;
 height: 75px;
 }
+@media screen and (max-width: 400px){
 
   header .logo img{
   	    width: 100px;
     height: 52px;
-  }header .logo {
-  	    width: 100px;
-    height: 52px;
   }
-
+}
+@media screen and (max-width: 340px) {
+  header .logo{
+  	width: 40px;
+  }
+  header .logo img{
+  	   width: 70px;
+    height: 45px;
+  }
+}
 /*links**/
 header .links{
 	float: right;
 }
 header .links nav ul li{
-	display: inline-block;
+	display: inline;
 	margin: 0 10px 0 0;
 }
 header .links nav ul li a {
@@ -75,12 +86,6 @@ header .logo,.links{
 	margin: 20px 0 0 ;
 }
 /*header links*/
-
-/*header texto*/
-
-
-
-/*header texto*/
 
 /*header social*/
 header nav,.social{
@@ -109,7 +114,7 @@ header .social li a{
 }
 .portfolio figure{
 	position: relative;
-		overflow: hidden;
+	overflow: hidden;
 }
 .portfolio figcaption a {
 	text-align: -webkit-auto;
@@ -149,6 +154,7 @@ header .social li a{
 .portfolio ul li{
 	justify-content: center;
 	height: 200px;
+	margin: auto;
 }
 
 .portfolio ul{

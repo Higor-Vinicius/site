@@ -28,16 +28,20 @@ header h1{
 	border: solid 3px white;
 	padding: 15px;
 }
+
 @media screen and (max-width: 500px) {
-  header nav ul{
-    display: none;
+  header nav,.links ul{
+    font-size: 10px;
+    padding-left: 0;
+  }
+  header .social a{
+  	font-size: 10px;
   }
   header h1,p{
-  	font-size: 0.9rem;
+  	font-size: 0.8rem;
   }
 }
 /*texto */
-
 /*header logo*/
 header .logo{
 float: left;
@@ -49,13 +53,20 @@ float: left;
 width: 120px;
 height: 75px;
 }
-	@media screen and (max-width: 996px) {
+@media screen and (max-width: 400px){
+
   header .logo img{
   	    width: 100px;
     height: 52px;
-  }header .logo {
-  	    width: 100px;
-    height: 52px;
+  }
+}
+@media screen and (max-width: 340px) {
+  header .logo{
+  	width: 40px;
+  }
+  header .logo img{
+  	   width: 70px;
+    height: 45px;
   }
 }
 /*links**/
@@ -63,7 +74,7 @@ header .links{
 	float: right;
 }
 header .links nav ul li{
-	display: inline-block;
+	display: inline;
 	margin: 0 10px 0 0;
 }
 header .links nav ul li a {
@@ -75,11 +86,6 @@ header .logo,.links{
 	margin: 20px 0 0 ;
 }
 /*header links*/
-
-.container2{
-	background-image: linear-gradient(white,#A0FAEB,#91E3D6,#71B0A5,#90E3E1);
-	    height: 22px;
-}
 
 /*header social*/
 header nav,.social{
@@ -101,7 +107,8 @@ header .social li a{
 	border-bottom-left-radius: 120px;
 	border-bottom-right-radius: 120px;
 }/*socia header*/
-section p{
+
+section p,h1{
 text-align: center
 }
 section ul{
